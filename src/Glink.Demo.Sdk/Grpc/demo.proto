@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Glink.Demo";
+package GlinkDemo;
+
+service Greeter {
+  rpc SayHello (stream HelloRequest) returns (HelloReply);
+}
+
+message HelloRequest {
+  string Id = 1;
+  bytes Data = 2;
+}
+
+message HelloReply {
+  string message = 1;
+}

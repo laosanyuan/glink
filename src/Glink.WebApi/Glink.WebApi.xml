@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Glink.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:Glink.WebApi.BackgroundServices.RawDataConsumerBackgroundService">
+            <summary>
+            原始数据消费 后台服务
+            </summary>
+        </member>
+        <member name="T:Glink.WebApi.Controllers.CalculationDemoController">
+            <summary>
+            算子演示 相关
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.#ctor(Glink.Demo.Sdk.Grpc.DemoRpcClientService,Glink.Runtime.Application.Contracts.PlaybackCenter.IPlaybackCenter,Microsoft.Extensions.Configuration.IConfiguration,Glink.Runtime.Application.Contracts.CalculationManager.ICalculationPiplineManager,Glink.Runtime.Application.Contracts.DataCenter.IDataProducer{Glink.Runtime.DataCenter.RawDataCenter})">
+            <summary>
+            
+            </summary>
+            <param name="demoRpcClientService"></param>
+            <param name="service"></param>
+            <param name="configuration"></param>
+            <param name="manager"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.Auto">
+            <summary>
+            一键演示
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.Init">
+            <summary>
+            初始化环境
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.AddMa5">
+            <summary>
+            添加Md5 计算算子
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.UpdateMd5">
+            <summary>
+            更新Md5 计算算子
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.AddSecondKline">
+            <summary>
+            添加秒K线 计算算子
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.AddMinuteKline">
+            <summary>
+            添加分K线 计算算子
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.Stop">
+            <summary>
+            停止
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.GetAll">
+            <summary>
+            查询
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.StartPush(System.String)">
+            <summary>
+            开始推送
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.AddCalculationPipline(System.String)">
+            <summary>
+            添加指定计算管道
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.CalculationDemoController.RemoveCalculationPipline(System.String)">
+            <summary>
+            移除指定计算管道
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Glink.WebApi.Controllers.MetaDataController">
+             <summary>
+             元数据 接口
+             </summary>
+            [ApiExplorerSettings(IgnoreApi = true)]
+        </member>
+        <member name="M:Glink.WebApi.Controllers.MetaDataController.Start(System.Collections.Generic.IList{Glink.Runtime.Application.Contracts.PlaybackCenter.MetaDataConsumerInfo})">
+            <summary>
+            开始回放
+            </summary>
+            <param name="infos"></param>
+            <param name="speed"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.MetaDataController.Stop(System.Collections.Generic.IList{Glink.Runtime.Application.Contracts.PlaybackCenter.MetaDataConsumerInfo})">
+            <summary>
+            结束回放
+            </summary>
+        </member>
+        <member name="T:Glink.WebApi.Controllers.PlaybackDemoController">
+            <summary>
+            回放中心 演示相关
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.Auto">
+            <summary>
+            一键演示
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.Init">
+            <summary>
+            启动演示程序
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.Start">
+            <summary>
+            开始回放 --- MA5   默认：不限制时间范围、1倍速
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.Update(System.Nullable{System.DateTime},System.Nullable{System.DateTime},System.Int32)">
+            <summary>
+            动态倍速回放
+            </summary>
+            <param name="startTime"></param>
+            <param name="endTime"></param>
+            <param name="speed"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.GetAll">
+            <summary>
+            查询所有
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.Stop">
+            <summary>
+            暂停回放
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.StartPush(System.String)">
+            <summary>
+            开始推送
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.AddCalculationPipline(System.String)">
+            <summary>
+            添加指定计算管道
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.RemoveCalculationPipline(System.String)">
+            <summary>
+            移除指定计算管道
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.PlaybackDemoController.ConvertTime(System.Byte[])">
+            <summary>
+            时间转换
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glink.WebApi.Controllers.RawDataController">
+            <summary>
+            原始数据 相关接口
+            </summary>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.RawDataController.PushHistoricalData(System.String)">
+            <summary>
+            推送 历史数据
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Glink.WebApi.Controllers.RawDataController.PushRealtimeData(System.Collections.Generic.IList{System.String})">
+            <summary>
+            推送 实时数据
+            </summary>
+            <param name="datas"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Glink.Controllers.CalculationPiplineController">
+            <summary>
+            算子管道 相关接口
+            </summary>
+        </member>
+        <member name="M:Glink.Controllers.CalculationPiplineController.Init">
+            <summary>
+            初始化,加载本地配置的默认动态库
+            </summary>
+        </member>
+        <member name="M:Glink.Controllers.CalculationPiplineController.AddBatch(System.Collections.Generic.IList{Glink.Runtime.Application.Contracts.CalculationManager.CalculationPiplineInfo})">
+            <summary>
+            批量添加
+            </summary>
+            <param name="infos"></param>
+        </member>
+        <member name="M:Glink.Controllers.CalculationPiplineController.RemoveBatch(System.Collections.Generic.IList{Glink.Runtime.Application.Contracts.CalculationManager.CalculationPiplineInfo})">
+            <summary>
+            批量删除
+            </summary>
+        </member>
+        <member name="M:Glink.Controllers.CalculationPiplineController.UpdateBatch(System.Collections.Generic.IList{Glink.Runtime.Application.Contracts.CalculationManager.CalculationPiplineInfo})">
+            <summary>
+            批量更新
+            </summary>
+            <param name="infos"></param>
+        </member>
+        <member name="M:Glink.Controllers.CalculationPiplineController.GetAll">
+            <summary>
+            查询所有
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

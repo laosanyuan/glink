@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0</TargetFrameworks>
+		<ServerGarbageCollection>true</ServerGarbageCollection>
+		<Version>1.0.11</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Google.Protobuf" Version="3.21.2" />
+		<PackageReference Include="Grpc.AspNetCore.Server" Version="2.46.0" />
+		<PackageReference Include="Grpc.Core.Api" Version="2.46.3" />
+		<PackageReference Include="Grpc.Net.ClientFactory" Version="2.46.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.47.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+
+		<Protobuf Include="Grpc\Demo.proto" GrpcServices="Both" />
+	</ItemGroup>
+
+</Project>
+

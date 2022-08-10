@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="BenchmarkDotNet.Artifacts\**" />
+	  <EmbeddedResource Remove="BenchmarkDotNet.Artifacts\**" />
+	  <None Remove="BenchmarkDotNet.Artifacts\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+	  <PackageReference Include="BenchmarkDotNet.Annotations" Version="0.13.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Glink.Components.MA\Glink.Components.MA.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="600418.csv">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+
+</Project>

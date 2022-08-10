@@ -1,0 +1,103 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.WebApi", "Glink.WebApi\Glink.WebApi.csproj", "{CA3A0E6F-1CED-4033-9A79-546ECC9E7780}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Presentation", "4. Presentation", "{CDBEAEC5-4BC2-44C8-A393-2C576C7A6043}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Components", "3. Components", "{CE9FB28E-7594-447B-AF5C-CFCD9AE9C248}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Tests", "5. Tests", "{F7CD54B3-564E-4CAA-ACEA-0AB260E6EDC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Runtime.Application.Contracts", "Glink.Runtime.Application.Contracts\Glink.Runtime.Application.Contracts.csproj", "{44F9AEC1-5502-4E4A-A596-B3EB9472D713}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Component.Abstractions", "Glink.Component.Abstractions\Glink.Component.Abstractions.csproj", "{08ACA28B-CD19-449F-AD4D-B97463B5A106}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{4C60F1A1-81FE-4FDF-8FA9-B3E6CEB1048F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Contracts", "1. Contracts", "{D9EBB80F-ACDB-40A8-A1DF-75F2C11C4559}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Runtime", "Glink.Runtime\Glink.Runtime.csproj", "{DDCA1F6D-E7A9-48B7-9710-4199169B301E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Components.MA", "Glink.Components.MA\Glink.Components.MA.csproj", "{6C72F9B0-7AF7-44D7-9324-4527213469AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Runtime.UnitTests", "Glink.Runtime.UnitTests\Glink.Runtime.UnitTests.csproj", "{312BFD7B-B1DF-4694-A140-99CC7538E2D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Components.BenchmarkTests", "Glink.Components.BenchmarkTests\Glink.Components.BenchmarkTests.csproj", "{11BA24C1-0FF6-490A-B23D-449B58A8BFA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Components.Demo", "Glink.Components.Demo\Glink.Components.Demo.csproj", "{9AC4D2A5-EEFF-4BBF-BD02-FB949CB3FA18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Demos", "6. Demos", "{0DA26EEF-D73B-42B2-8774-B7FDEE0D6935}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Demo", "Glink.Demo\Glink.Demo.csproj", "{47E36379-CB70-4641-8226-C5DB3EE11FFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Glink.Demo.Sdk", "Glink.Demo.Sdk\Glink.Demo.Sdk.csproj", "{9670902A-F0AE-4C8C-B8A7-E5FFDBBAB335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA3A0E6F-1CED-4033-9A79-546ECC9E7780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3A0E6F-1CED-4033-9A79-546ECC9E7780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3A0E6F-1CED-4033-9A79-546ECC9E7780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3A0E6F-1CED-4033-9A79-546ECC9E7780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44F9AEC1-5502-4E4A-A596-B3EB9472D713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44F9AEC1-5502-4E4A-A596-B3EB9472D713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44F9AEC1-5502-4E4A-A596-B3EB9472D713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44F9AEC1-5502-4E4A-A596-B3EB9472D713}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ACA28B-CD19-449F-AD4D-B97463B5A106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ACA28B-CD19-449F-AD4D-B97463B5A106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ACA28B-CD19-449F-AD4D-B97463B5A106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ACA28B-CD19-449F-AD4D-B97463B5A106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDCA1F6D-E7A9-48B7-9710-4199169B301E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCA1F6D-E7A9-48B7-9710-4199169B301E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCA1F6D-E7A9-48B7-9710-4199169B301E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCA1F6D-E7A9-48B7-9710-4199169B301E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C72F9B0-7AF7-44D7-9324-4527213469AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C72F9B0-7AF7-44D7-9324-4527213469AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C72F9B0-7AF7-44D7-9324-4527213469AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C72F9B0-7AF7-44D7-9324-4527213469AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312BFD7B-B1DF-4694-A140-99CC7538E2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312BFD7B-B1DF-4694-A140-99CC7538E2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312BFD7B-B1DF-4694-A140-99CC7538E2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312BFD7B-B1DF-4694-A140-99CC7538E2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BA24C1-0FF6-490A-B23D-449B58A8BFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BA24C1-0FF6-490A-B23D-449B58A8BFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BA24C1-0FF6-490A-B23D-449B58A8BFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BA24C1-0FF6-490A-B23D-449B58A8BFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AC4D2A5-EEFF-4BBF-BD02-FB949CB3FA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AC4D2A5-EEFF-4BBF-BD02-FB949CB3FA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AC4D2A5-EEFF-4BBF-BD02-FB949CB3FA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AC4D2A5-EEFF-4BBF-BD02-FB949CB3FA18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E36379-CB70-4641-8226-C5DB3EE11FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E36379-CB70-4641-8226-C5DB3EE11FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E36379-CB70-4641-8226-C5DB3EE11FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E36379-CB70-4641-8226-C5DB3EE11FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9670902A-F0AE-4C8C-B8A7-E5FFDBBAB335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9670902A-F0AE-4C8C-B8A7-E5FFDBBAB335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9670902A-F0AE-4C8C-B8A7-E5FFDBBAB335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9670902A-F0AE-4C8C-B8A7-E5FFDBBAB335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA3A0E6F-1CED-4033-9A79-546ECC9E7780} = {CDBEAEC5-4BC2-44C8-A393-2C576C7A6043}
+		{44F9AEC1-5502-4E4A-A596-B3EB9472D713} = {D9EBB80F-ACDB-40A8-A1DF-75F2C11C4559}
+		{08ACA28B-CD19-449F-AD4D-B97463B5A106} = {D9EBB80F-ACDB-40A8-A1DF-75F2C11C4559}
+		{DDCA1F6D-E7A9-48B7-9710-4199169B301E} = {4C60F1A1-81FE-4FDF-8FA9-B3E6CEB1048F}
+		{6C72F9B0-7AF7-44D7-9324-4527213469AB} = {CE9FB28E-7594-447B-AF5C-CFCD9AE9C248}
+		{312BFD7B-B1DF-4694-A140-99CC7538E2D4} = {F7CD54B3-564E-4CAA-ACEA-0AB260E6EDC9}
+		{11BA24C1-0FF6-490A-B23D-449B58A8BFA3} = {F7CD54B3-564E-4CAA-ACEA-0AB260E6EDC9}
+		{9AC4D2A5-EEFF-4BBF-BD02-FB949CB3FA18} = {CE9FB28E-7594-447B-AF5C-CFCD9AE9C248}
+		{47E36379-CB70-4641-8226-C5DB3EE11FFF} = {0DA26EEF-D73B-42B2-8774-B7FDEE0D6935}
+		{9670902A-F0AE-4C8C-B8A7-E5FFDBBAB335} = {0DA26EEF-D73B-42B2-8774-B7FDEE0D6935}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4735DE5E-A649-4801-8C0C-75FB6BE25730}
+	EndGlobalSection
+EndGlobal
