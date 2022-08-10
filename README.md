@@ -36,7 +36,26 @@
 ![Image text](./%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E6%95%B0%E6%8D%AE%E7%AE%A1%E9%81%93%E6%B5%81%E7%A8%8B.png)
 如图所示，一个数据管道 包含 一个算子引擎。算子引擎 是数据计算的抽象流程的具体实现，可以根据业务场景 自由定制，并动态编译上传
 
+
+### 3.算子管理时序
+![Image text](./%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E7%AE%97%E5%AD%90%E7%AE%A1%E7%90%86%E6%97%B6%E5%BA%8F.png)
+
+### 4.应用架构
+![Image text](./%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/%E5%BA%94%E7%94%A8%E6%9E%B6%E6%9E%84.png)
+
 # 三.性能测试
 [测试报告](https://gitee.com/MrGuaiGuaiHu/glink/blob/feature-calculationdemo/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/%E5%AE%9E%E6%97%B6%E8%AE%A1%E7%AE%97-%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A.docx)    
 
+# 四.算子接入示例
+###   1.接入步骤  
+**1)接入算子引擎SDK**: Glink.Component.Abstractions.1.0.0.nupkg  
+**2)实现接口**：ICalculationEngine.cs  
+**3)打包成动态库，并上传**：Glink.Components.MA.dll  
+**4)通过HttpApi接口，运行算子引擎**       
 
+###  2.MA 算子开发方案
+1）计算流程
+![Image text](./%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/MA%E7%AE%97%E5%AD%90%E8%AE%A1%E7%AE%97%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
+
+2）内存序列  
+![Image text](./%E8%AE%BE%E8%AE%A1%E6%96%87%E6%A1%A3/MA%E7%AE%97%E5%AD%90%E5%86%85%E5%AD%98%E5%BA%8F%E5%88%97.png)
