@@ -12,7 +12,7 @@ namespace Glink.Components.BenchmarkTests
     {
         public readonly List<ReadOnlySequence<byte>> datas = new List<ReadOnlySequence<byte>>();
 
-        [Params(100000)]
+        [Params(200000)]
         public int DataCount;
 
         [GlobalSetup]
@@ -41,47 +41,37 @@ namespace Glink.Components.BenchmarkTests
         [Benchmark(Description = "筛选股票")]
         public void TestSecurityFilter()
         {
-            MA5CalculateEngine ma = new MA5CalculateEngine();
+            MA5CompactCalculateEngine ma = new MA5CompactCalculateEngine();
             foreach (var data in datas)
             {
                 // 股票筛选
-                var securities = ma.XDimensionDataFilter(data);
+                var securities = ma.XDimensionDataFilter<object>(data);
             }
         }
 
         [Benchmark(Description = "筛选时间")]
         public void TestTimeFilter()
         {
-            MA5CalculateEngine ma = new MA5CalculateEngine();
+            MA5CompactCalculateEngine ma = new MA5CompactCalculateEngine();
             foreach (var data in datas)
             {
-                // 股票筛选
-                var securities = ma.XDimensionDataFilter(data);
-                if (securities.Item1 != null)
-                {
-                    // 时间筛选
-                    var times = ma.YDimensionDataFilter(securities.Item1, securities.Item2, data);
-                }
+                // 时间筛选
+                var times = ma.YDimensionDataFilter(data);
             }
         }
 
         [Benchmark(Description = "筛选价格")]
         public void TestPriceFilter()
         {
-            MA5CalculateEngine ma = new MA5CalculateEngine();
+            MA5CompactCalculateEngine ma = new MA5CompactCalculateEngine();
             foreach (var data in datas)
             {
-                // 股票筛选
-                var securities = ma.XDimensionDataFilter(data);
-                if (securities.Item1 != null)
+                // 时间筛选
+                var times = ma.YDimensionDataFilter(data);
+                if (times.Item2 != 0)
                 {
-                    // 时间筛选
-                    var times = ma.YDimensionDataFilter(securities.Item1, securities.Item2, data);
-                    if (times.Item1 != null)
-                    {
-                        // 收盘价格筛选
-                        var closes = ma.ZDimensionDataFilter(times.Item2, data);
-                    }
+                    // 收盘价格筛选
+                    var closes = ma.ZDimensionDataFilter(times.Item2, data);
                 }
             }
         }
@@ -89,30 +79,25 @@ namespace Glink.Components.BenchmarkTests
         [Benchmark(Description = "计算MA5")]
         public void Calculate()
         {
-            MA5CalculateEngine ma = new MA5CalculateEngine();
+            MA5CompactCalculateEngine ma = new MA5CompactCalculateEngine();
             foreach (var data in datas)
             {
-
-                // 股票筛选
-                var securities = ma.XDimensionDataFilter(data);
-                if (securities.Item1 != null)
+                // 时间筛选
+                var time = ma.YDimensionDataFilter(data);
+                if (time.Item2 != 0)
                 {
-                    // 时间筛选
-                    var times = ma.YDimensionDataFilter(securities.Item1, securities.Item2, data);
-                    if (times.Item1 != null)
-                    {
-                        // 收盘价格筛选
-                        var closes = ma.ZDimensionDataFilter(times.Item2, data);
-                        var calculateResult = ma.Calculate(times.Item1, closes);
-                    }
+                    // 收盘价格筛选
+                    var close = ma.ZDimensionDataFilter(time.Item2, data);
+                    var result = ma.Calculate(time.Item1, close);
                 }
             }
+
         }
 
         [Benchmark(Description = "执行")]
         public void TestExecute()
         {
-            MA5CalculateEngine ma = new MA5CalculateEngine();
+            MA5CompactCalculateEngine ma = new MA5CompactCalculateEngine();
             foreach (var data in datas)
             {
                 var result = ma.Execute(data);
